@@ -1,12 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Recruitment task</title>
-</head>
-<body>
-test
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Jakub Jęda</title>
+  </head>
+  <body>
+    <nav>
+      <a href="" class="logo">Logo</a>
+      <button type="button" class="btn-mobile" id="btn-mobile" aria-expanded="false" aria-controls="navigation" aria-label="menu">
+        <div class="btn-mobile__line"></div>
+        <div class="btn-mobile__line"></div>
+        <div class="btn-mobile__line"></div>
+      </button>
+      <div id="navigation" class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__link navigation__link_active"><a href="#">Home</a></li>
+          <li class="navigation__link"><a href="#">About</a></li>
+          <li class="navigation__link"><a href="#">Services</a></li>
+          <li class="navigation__link"><a href="#">Pages</a></li>
+        </ul>
+        <p class="navigation__contact-text">Call Us: <span>+48 123 456 798</span></p>
+        <select id="language" class="navigation__select" aria-label="Select language">
+          <option value="en" selected>EN</option>
+          <option value="pl">PL</option>
+        </select>
+        <button class="navigation__contact-btn">Contact Us</button>
+      </div>
+      <div class="nav__square"></div>
+    </nav>
+
+    <main>
+      <section class="hero">
+        <h1 class="hero__main-text">Lorem ipsum dolor sit amet</h1>
+        <p class="hero__additional-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lobortis leo ut felis vestibulum cursus. Vestibulum ante
+          ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+        </p>
+        <button class="hero__play-btn">
+          <div class="hero__btn-circle">
+            <img class="hero__btn-triangle" />
+          </div>
+          <p class="hero__btn-text"><span>Watch </span>demo video</p>
+        </button>
+        <div class="hero__shapes">
+          <div class="hero__block hero__block_1"></div>
+          <div class="hero__block hero__block_2"></div>
+          <div class="hero__block hero__block_3"></div>
+          <div class="hero__block hero__block_4"></div>
+          <div class="hero__block hero__circle"></div>
+          <img class="hero__block hero__pattern"></img>
+        </div>
+      </section>
+
+      <section class="blog">
+        <header class="blog__header">
+          <p class="blog__name">our blog</p>
+          <h2 class="blog__main-text">Lorem ipsum dolor</h2>
+        </header>
+        <div class="blog__card-container">
+          <div class="card card_black">
+            <div class="user">
+              <div class="user__info">
+                <p class="user__name">Frank Lampard</p>
+                <p class="user__date">20 Jan, 2023</p>
+              </div>
+            </div>
+            <div class="card__content">
+              <p class="card__title card__title_black">Lorem ipsum dolor sit amet, consectetur</p>
+              <button type="button" class="card__btn card__btn_black">More</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="user">
+              <div class="user__img"></div>
+              <div class="user__info">
+                <p class="user__name">Paul Scholes</p>
+                <p class="user__date">15 Jan, 2023</p>
+              </div>
+            </div>
+            <div class="card__line"></div>
+            <div class="card__content">
+              <p class="card__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p class="card__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit sour. Commodo amet posuere parta ener shippe up.
+              </p>
+              <button type="button" class="card__btn">Read More</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="user">
+              <div class="user__img"></div>
+              <div class="user__info">
+                <p class="user__name">Hary Kane</p>
+                <p class="user__date">15 Jan, 2023</p>
+              </div>
+            </div>
+            <div class="card__line"></div>
+            <div class="card__content">
+              <p class="card__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p class="card__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit sour. Commodo amet posuere parta ener shippe up.
+              </p>
+              <button type="button" class="card__btn">Read More</button>
+            </div>
+          </div>
+        </div>
+        <div class="blog__shapes">
+          <div class="blog__circle"></div>
+          <img class="blog__pattern" />
+        </div>
+      </section>
+    </main>
+
+    <div class="modal" inert>
+        <div class="modal__container">
+            <button type="button" class="modal__close-btn">X</button>
+            <div class="modal__iframe">
+            </div>
+        </div>
+    </div>
+  </body>
 </html>
